@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
 
         const task_delete_el = document.createElement("button");
         task_delete_el.classList.add("delete");
-        task_delete_el.innerHTML.add("Delete");
+        task_delete_el.innerHTML = ("Delete");
 
         task_actions_el.appendChild(task_edit_el);
         task_actions_el.appendChild(task_delete_el);

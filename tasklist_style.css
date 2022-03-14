@@ -102,7 +102,7 @@ color: var(--gray);
 margin-bottom: 1rem;
 }
 
-#tasks{
+#tasks .task{
   display: flex;
   justify-content: space-between;
   background-color: var(--darkest);
@@ -111,7 +111,7 @@ margin-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
-#tasks .content .text{
+#tasks .task .content .text{
   color: var(--light);
   font-size: 1.25rem;
   width: 100%;
@@ -119,17 +119,17 @@ margin-bottom: 1rem;
   transition: 0.4s;
 }
 
-#tasks .content .text:not(:read-only) {
+#tasks .task .content .text:not(:read-only) {
   color: var(--pink);
 }
 
-#tasks .actions {
-
+#tasks .task .actions {
   display: flex;
   margin: 0 -0.5rem;
 }
 
-#tasks .actions button {
+
+.task .actions button {
   cursor: pointer;
   margin: 0 0.5rem;
   font-size: 700;
@@ -137,15 +137,15 @@ margin-bottom: 1rem;
   transition: 0.4s;
 }
 
-#tasks .actions button:hover {
+.task .actions button:hover {
   opacity: 0.8;
 }
 
-#tasks .actions button:active {
+.task .actions button:active {
   opacity: 0.6;
 }
 
-#tasks .actions .edit {
+.task .actions .edit {
   background-image: linear-gradient(to right, var(--pink), var(--purple));
   -webkit-background-clip: text;
   background-clip: text;
@@ -154,7 +154,7 @@ margin-bottom: 1rem;
   transition: 0.4s;
 }
 
-#tasks .actions .delete {
+.task .actions .delete {
   color: crimson;
 }
 
