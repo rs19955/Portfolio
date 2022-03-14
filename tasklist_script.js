@@ -1,9 +1,8 @@
-
-
 window.addEventListener("load", () => {
     const form = document.querySelector("#new-task-form");
     const input = document.querySelector("#new-task-input");
     const list_el = document.querySelector("#tasks");
+    console.log(form);
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -29,7 +28,7 @@ window.addEventListener("load", () => {
         task_input_el.value = task;
         task_input_el.setAttribute("readonly", "readonly");
 
-        task_content_el.appendChild("task_input_el");
+        task_content_el.appendChild(task_input_el);
 
         const task_actions_el = document.createElement("div");
         task_actions_el.classList.add("actions");

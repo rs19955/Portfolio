@@ -105,7 +105,7 @@ margin-bottom: 1rem;
 #tasks .task{
   display: flex;
   justify-content: space-between;
-  background-color: var(--darkest);
+  background-color: var(--light);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
