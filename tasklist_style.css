@@ -69,6 +69,7 @@ input, button {
   font-weight: 700;
   background-image: linear-gradient(to right, var(--pink), var(--purple));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: 0.4s;
@@ -147,6 +148,7 @@ margin-bottom: 1rem;
 #tasks .actions .edit {
   background-image: linear-gradient(to right, var(--pink), var(--purple));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: 0.4s;
