@@ -1,0 +1,16 @@
+body {color: white;
+background: rgb(139, 143, 143);
+font-family: sans-serif;}
+
+nav {
+  background-color: rgb(43, 109, 196);
+  padding: 2.5px;
+}
+
+nav ul li{
+  color: rgb(3, 3, 3);
+  font-family: Arial;
+  font-size: larger;
+  display: inline-flex;
+  width: 15%;
+}

@@ -1,0 +1,86 @@
+body {color: white;
+background: rgb(139, 143, 143);
+font-family: sans-serif;}
+
+nav {
+  background-color: rgb(43, 109, 196);
+  padding: 2.5px;
+}
+
+nav ul li{
+  color: rgb(3, 3, 3);
+  font-family: Arial;
+  font-size: larger;
+  display: inline-flex;
+  width: 15%;
+}
+
+.aboutMe {
+  font-family: sans-serif;
+}
+
+.hobbies {
+  color: white;
+  font-family: sans-serif;
+}
+
+.boxing h2 {
+  font-style: italic;
+  font-family: ariel;
+  color: rgb(255, 255, 255);}
+
+.boxing {
+background: blue;}
+
+.boxerlist {color: black;}
+
+.gaming {
+background: green;
+font-family: sans-serif;}
+
+.gaming ol {
+  line-height: 30px;
+  margin: 10px;
+}
+
+@media (max-width: 2400px) {
+.dog {float: left;
+  width: 35%;
+  padding: 5px;}
+}
+
+@media (max-width: 1200px) {
+.dog {float: left;
+  width: 25%;
+  padding: 5px;}
+}
+
+@media (max-width: 800px) {
+.dog {width: 0px;}
+.frenchie{
+  font-style: italic;
+  font-size: 20px
+}}
+
+
+.frenchie::after {
+  content: "";
+  clear: both;
+  display: table;}
+
+/* section a gets overruled by Container */
+section a {
+  color: cyan;
+}
+
+.contactform {
+  margin-left: 45%;
+  margin-right: 25%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+
+}
+
+.footer-contact{
+  margin-left: 50%;
+}
