@@ -7,7 +7,7 @@ let secretNumber = Math.trunc(Math.random()*20)+1;
 let score = 20;
 let highScore = 0;
 
-// Function that can be used to update the message instead of repeating the command
+// Function that can be used to update the message instead of repeating document.querySelector(".message").textContent
 const displayMessage = function(message) {
     document.querySelector(".message").textContent = message;
 };
