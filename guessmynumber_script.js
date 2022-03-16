@@ -33,6 +33,7 @@ document.querySelector(".check").addEventListener("click", function() {
     // When guess is wrong
     else if (guess !== secretNumber) {
         if(score > 1) {
+        // Conditional (ternary) operator: guess > secretNumber ? "Guess to HIGH 📈 " : "Guess to LOW 📉 ";
         document.querySelector(".message").textContent = guess > secretNumber ? "Guess to HIGH 📈 " : "Guess to LOW 📉 ";
         score--;
         document.querySelector(".score").textContent = score;
