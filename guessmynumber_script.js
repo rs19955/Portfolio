@@ -14,27 +14,26 @@ document.querySelector(".check").addEventListener("click", function() {
     // When there is no input
     if (!guess) {
         document.querySelector(".message").textContent = "No Number ⛔️";
-        
     } 
     // When player wins
     else if (guess === secretNumber) {
         document.querySelector(".message").textContent = "Correct Number 🥳";
-        // Changes background colour for correct guess
         document.querySelector(".number").textContent = secretNumber;
-console.log(secretNumber);
+        console.log(secretNumber);
+        // Changes background colour for correct guess
         document.querySelector("body").style.backgroundColor = "#60b347";
         // Changes box width for correct guess
         document.querySelector(".number").style.width = "30rem";
-        // Highscore
+        // Updates Highscore
         if(score > highScore) {
             highScore = score;
             document.querySelector(".highscore").textContent = highScore;
         }
     } 
-    // When guess is too high
-    else if (guess > secretNumber) {
+    // When guess is wrong
+    else if (guess !== secretNumber) {
         if(score > 1) {
-        document.querySelector(".message").textContent = "Guess to HIGH 📈";
+        document.querySelector(".message").textContent = guess > secretNumber ? "Guess to HIGH 📈 " : "Guess to LOW 📉 ";
         score--;
         document.querySelector(".score").textContent = score;
         } else {
@@ -42,17 +41,6 @@ console.log(secretNumber);
             document.querySelector(".score").textContent = 0;
         }
     } 
-    // When guess is too low
-    else if (guess < secretNumber) {
-        if(score > 1) {
-        document.querySelector(".message").textContent = "Guess to LOW 📉";
-        score--;
-        document.querySelector(".score").textContent = score;
-        } else {
-            document.querySelector(".message").textContent = "You LOST the game 😩";
-            document.querySelector(".score").textContent = 0;
-        }
-    }
 });
 
 // Configuring the "Again" button
